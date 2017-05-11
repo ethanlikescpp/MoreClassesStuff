@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include <iostream>
 #include "mathstuff.h"
+#include "Person.h"
 
 using namespace std;
 
@@ -20,9 +21,7 @@ public:
 class Stock {
 public:
 	Stock() {
-		cout << "This will be run automatically when object is created" << endl;
-		
-	}
+	};
 	Prices yesterday, today;
 
 	// Stock -> Double
@@ -31,7 +30,6 @@ public:
 		double rate = today.price / yesterday.price;
 		return rate * today.price;
 	}
-
 };
 
 // Put function declarations below the classes!
@@ -65,6 +63,7 @@ int main() {
 	cout << "Predicted price for tomorrow: " << tomorrowprice << endl;
 
 	Stock *pAmd = new Stock();
+	
 	
 
     return 0;

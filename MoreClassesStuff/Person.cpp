@@ -1,3 +1,5 @@
+// Here you actually write the objects and functions you've declared in the header
+
 #include "stdafx.h"
 #include "Person.h"
 #include <iostream>
@@ -17,4 +19,8 @@ Person::Person(string fName, string lName, int age) {
 }
 
 Person::~Person() {
+}
+
+string Person::returnname() {
+	return firstName + " " + lastName;
 }
